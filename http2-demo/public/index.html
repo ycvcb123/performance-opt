@@ -1,0 +1,18 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  自己启动的http2 服务
+</body>
+<script src="bundle1.js"></script>
+<script src="bundle2.js"></script>
+<script>
+  for (var i = 0; i < 6; i++) {
+    fetch(`//localhost:8080/${i + 1}.jpg`);
+  }
+</script>
+
+</html>
